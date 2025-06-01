@@ -26,7 +26,7 @@ async function loadSession() {
     if (!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!');
     const sessdata = config.SESSION_ID;
     const Cronez = sessdata.replace('xmd~', '');
-    const filer = File.fromURL(`https://mega.nz/file/${Cronez}`);
+    const filer = File.fromURL(`https://mega.nz/file/${xmd}`);
     filer.download((err, data) => {
       if (err) throw err;
       fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
@@ -210,3 +210,4 @@ setTimeout(() => {
  loadSession();       
 connectToWA()
 }, 4000);
+  
