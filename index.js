@@ -26,26 +26,13 @@ async function loadSession() {
     if (!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!');
     const sessdata = config.SESSION_ID;
     const Cronez = sessdata.replace('xmd~', '');
-    const megaUrl = `https://mega.nz/file/${sessionLink}`;
-
-    if (!megaUrl.includes('#')) {
-      return console.error('❌ Invalid MEGA URL: Missing hash (#...). Check your SESSION_ID.');
-    }
-
-    try {
-      const file = File.fromURL(megaUrl);
-      file.download((err, data) => {
-        if (err) {
-          console.error('❌ Error downloading session file:', err.message);
-        } else {
-          fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
-            console.log('*✅ Session downloaded and saved to creds.json*');
-          });
-        }
+    const filer = File.fromURL(`https://mega.nz/file/${xmd}`);
+    filer.download((err, data) => {
+      if (err) throw err;
+      fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
+        console.log('*sᴇssɪᴏɴ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ [🌟]*');
       });
-    } catch (e) {
-      console.error('❌ MEGA file load error:', e.message);
-    }
+    });
   }
 }
 
@@ -223,4 +210,3 @@ setTimeout(() => {
  loadSession();       
 connectToWA()
 }, 4000);
-  
