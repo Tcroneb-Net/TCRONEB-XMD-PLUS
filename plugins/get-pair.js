@@ -7,7 +7,7 @@ cmd({
     react: "✅",
     desc: "Get pairing code for KHAN-MD bot",
     category: "download",
-    use: ".pair 923427582XXX",
+    use: ".pair 26378853XXX",
     filename: __filename
 }, async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, senderNumber, reply }) => {
     try {
@@ -16,18 +16,18 @@ cmd({
 
         // Validate phone number format
         if (!phoneNumber || phoneNumber.length < 10 || phoneNumber.length > 15) {
-            return await reply("❌ Please provide a valid phone number without `+`\nExample: `.pair 923427582XXX`");
+            return await reply("❌ Please provide a valid phone number without `+`\nExample: `.pair26378853XXX`");
         }
 
         // Make API request to get pairing code
-        const response = await axios.get(`https://jawadmd-pair.onrender.com/code?number=${encodeURIComponent(phoneNumber)}`);
+        const response = await axios.get(`https://tcroneb-xmd-plus.onrender.com/pair/code?number=${encodeURIComponent(phoneNumber)}`);
 
         if (!response.data || !response.data.code) {
             return await reply("❌ Failed to retrieve pairing code. Please try again later.");
         }
 
         const pairingCode = response.data.code;
-        const doneMessage = "> *KHAN-MD PAIRING COMPLETED*";
+        const doneMessage = "> *XMD-PLUS PAIRING COMPLETED*";
 
         // Send initial message with formatting
         await reply(`${doneMessage}\n\n*Your pairing code is:* ${pairingCode}`);
