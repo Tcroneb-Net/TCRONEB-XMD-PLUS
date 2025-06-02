@@ -1,6 +1,6 @@
 name: khan-md
 services:
-  - name: khan-md-service
+  - name:xmd-service
     type: web
     ports:
       - 5000
