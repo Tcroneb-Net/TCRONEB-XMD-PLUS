@@ -27,7 +27,7 @@ ANTI_LINK: process.env.ANTI_LINK || "true",
 // make anti link true,false for groups 
 MENTION_REPLY: process.env.MENTION_REPLY || "false",
 // make true if want auto voice reply if someone menetion you 
-MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/7zfdcq.jpg",
+MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://i.ibb.co/HTrS1HYv/beee.jpg",
 // add custom menu and mention reply image url
 PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot   
@@ -47,7 +47,7 @@ OWNER_NAME: process.env.OWNER_NAME || "Tcroneb HackX",
 // add bot owner name
 DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Tcroneb HackX*",
 // add bot owner name    
-ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/149k8x.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/HTrS1HYv/beee.jpg",
 // add img for alive msg
 LIVE_MSG: process.env.LIVE_MSG || "> I DON'T DO BEG *XMD-PLUS*⚡",
 // add alive msg here 
