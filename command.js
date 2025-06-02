@@ -1,6 +1,6 @@
 var commands = [];
 
-function eypz(info, func) {
+function cmd(info, func) {
     var data = info;
     data.function = func;
     if (!data.dontAddCommandList) data.dontAddCommandList = false;
@@ -12,9 +12,9 @@ function eypz(info, func) {
     return data;
 }
 module.exports = {
-    eypz,
-    AddCommand:eypz,
-    Function:eypz,
-    Module:eypz,
+    cmd,
+    AddCommand:cmd,
+    Function:cmd,
+    Module:cmd,
     commands,
 };
