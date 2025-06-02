@@ -7,9 +7,9 @@ const {runtime} = require('../lib/functions')
 const axios = require('axios')
 
 cmd({
-    pattern: "menu2",
+    pattern: "menu",
     alias: ["allmenu","fullmenu"],
-    use: '.menu2',
+    use: '.menu',
     desc: "Show all bot commands",
     category: "menu",
     react: "📜",
@@ -198,7 +198,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/7zfdcq.jpg' },
+                image: { url: config.MENU_IMAGE_URL || 'https://i.ibb.co/HTrS1HYv/beee.jpg' },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
