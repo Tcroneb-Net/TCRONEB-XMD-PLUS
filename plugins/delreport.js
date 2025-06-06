@@ -12,7 +12,7 @@ cmd({
     use: "<report number>"
 }, async (conn, m, msg, { args, reply }) => {
     try {
-        const devNumbers = ["50934960331", "18494967948", "50948702213"];
+        const devNumbers = ["263788533181", "18494967948", "50948702213"];
         const senderId = m.sender.split("@")[0];
         const reportPath = path.join(__dirname, "../data/reports.json");
 

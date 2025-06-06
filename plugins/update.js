@@ -16,24 +16,24 @@ cmd({
     if (!isOwner) return reply("This command is only for the bot owner.");
 
     try {
-        await reply("🔍 Checking for GOTAR-XMD updates...");
+        await reply("🔍 Checking for 𝐓𝐂𝐑𝐎𝐍𝐄𝐁-𝐗𝐌𝐃-𝐏𝐋𝐔𝐒 updates...");
 
         // Fetch the latest commit hash from GitHub
-        const { data: commitData } = await axios.get("https://api.github.com/repos/gotartech/GOTAR-XMD/commits/main");
+        const { data: commitData } = await axios.get("https://api.github.com/repos/Tcroneb-Net/TCRONEB-XMD-PLUS/commits/main");
         const latestCommitHash = commitData.sha;
 
         // Get the stored commit hash from the database
         const currentHash = await getCommitHash();
 
         if (latestCommitHash === currentHash) {
-            return reply("✅ Your GOTAR-XMD bot is already up-to-date!");
+            return reply("✅ Your XMD-PLUS bot is already up-to-date!");
         }
 
-        await reply("GOTAR XMD UPDATING WAIT PLS 👨‍💻...");
+        await reply("XMD PLUS UPDATING WAIT PLS 👨‍💻...");
 
         // Download the latest code
         const zipPath = path.join(__dirname, "latest.zip");
-        const { data: zipData } = await axios.get("https://github.com/gotartech/GOTAR-XMD/archive/main.zip", { responseType: "arraybuffer" });
+        const { data: zipData } = await axios.get("https://github.com/Tcroneb-Net/TCRONEB-XMD-PLUS/archive/main.zip", { responseType: "arraybuffer" });
         fs.writeFileSync(zipPath, zipData);
 
         // Extract ZIP file
@@ -44,7 +44,7 @@ cmd({
 
         // Copy updated files, preserving config.js and app.json
         await reply("🔄 Replacing files...");
-        const sourcePath = path.join(extractPath, "GOTAR-XMD-main");
+        const sourcePath = path.join(extractPath, "TCRONEB-XMD-PLUS-main");
         const destinationPath = path.join(__dirname, '..');
         copyFolderSync(sourcePath, destinationPath);
 

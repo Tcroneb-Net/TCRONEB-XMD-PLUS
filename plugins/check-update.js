@@ -27,7 +27,7 @@ cmd({
     }
 
     // Fetch latest version data from GitHub
-    const rawVersionUrl = 'https://raw.githubusercontent.com/gotartech/GOTAR-XMD/main/data/version.json';
+    const rawVersionUrl = 'https://raw.githubusercontent.com/Tcroneb-Net/TCRONEB-XMD-PLUS/main/data/version.json';
     let latestVersion = 'Unknown';
     let latestChangelog = 'No changelog available.';
     try {
@@ -53,12 +53,12 @@ cmd({
     const lastUpdate = fs.statSync(localVersionPath).mtime.toLocaleString();
 
     // GitHub stats
-    const githubRepo = 'https://github.com/gotartech/GOTAR-XMD';
+    const githubRepo = 'https://github.com/Tcroneb-Net/TCRONEB-XMD-PLUS';
 
     // Check update status
-    let updateMessage = `✅ Your 𝐆𝐎𝐓𝐀𝐑 𝐗𝐌𝐃 bot is up-to-date!`;
+    let updateMessage = `✅ Your 𝐓𝐂𝐑𝐎𝐍𝐄𝐁 𝐗𝐌𝐃 𝐏𝐋𝐔𝐒 bot is up-to-date!`;
     if (localVersion !== latestVersion) {
-      updateMessage = `🚀 Your 𝐆𝐎𝐓𝐀𝐑 𝐗𝐌𝐃 bot is outdated!
+      updateMessage = `🚀 Your 𝐓𝐂𝐑𝐎𝐍𝐄𝐁 𝐗𝐌𝐃 𝐏𝐋𝐔𝐒 bot is outdated!
 🔹 *Current Version:* ${localVersion}
 🔹 *Latest Version:* ${latestVersion}
 
@@ -66,10 +66,10 @@ Use *.update* to update.`;
     }
 
     const statusMessage = `🌟 *Good ${new Date().getHours() < 12 ? 'Morning' : 'Night'}, ${pushname}!* 🌟\n\n` +
-      `📌 *Bot Name:* 𝐆𝐎𝐓𝐀𝐑 𝐗𝐌𝐃\n🔖 *Current Version:* ${localVersion}\n📢 *Latest Version:* ${latestVersion}\n📂 *Total Plugins:* ${pluginCount}\n🔢 *Total Commands:* ${totalCommands}\n\n` +
+      `📌 *Bot Name:* 𝐓𝐂𝐑𝐎𝐍𝐄𝐁 𝐗𝐌𝐃 𝐏𝐋𝐔𝐒\n🔖 *Current Version:* ${localVersion}\n📢 *Latest Version:* ${latestVersion}\n📂 *Total Plugins:* ${pluginCount}\n🔢 *Total Commands:* ${totalCommands}\n\n` +
       `💾 *System Info:*\n⏳ *Uptime:* ${uptime}\n📟 *RAM Usage:* ${ramUsage}MB / ${totalRam}MB\n⚙️ *Host Name:* ${hostName}\n📅 *Last Update:* ${lastUpdate}\n\n` +
       `📝 *Changelog:*\n${latestChangelog}\n\n` +
-      `⭐ *GitHub Repo:* ${githubRepo}\n👤 *Owner:* [GotarTech](https://github.com/gotartech)\n\n${updateMessage}\n\n🚀 *Hey! Don't forget to fork & star the repo!*`;
+      `⭐ *GitHub Repo:* ${githubRepo}\n👤 *Owner:* [Tcroneb-Net](https://github.com/Tcroneb-Net)\n\n${updateMessage}\n\n🚀 *Hey! Don't forget to fork & star the repo!*`;
 
     // Send the status message with an image
     await conn.sendMessage(from, {
@@ -80,8 +80,8 @@ Use *.update* to update.`;
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363401658098220@newsletter',
-          newsletterName: '𝐆𝐎𝐓𝐀𝐑 𝐗𝐌𝐃',
+          newsletterJid: '12036346098220@newsletter',
+          newsletterName: '𝐗𝐌𝐃-𝐏𝐋𝐔𝐒',
           serverMessageId: 143
         }
       }

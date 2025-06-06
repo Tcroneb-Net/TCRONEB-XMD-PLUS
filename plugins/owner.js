@@ -30,7 +30,7 @@ async (conn, mek, m, { from }) => {
         // Send the owner contact message with image and audio
         await conn.sendMessage(from, {
             image: { url: 'https://files.catbox.moe/82b8gr.jpg' }, // Image URL from your request
-            caption: `╭━━〔 𝐆𝐎𝐓𝐀𝐑 𝐗𝐌𝐃 〕━━┈⊷
+            caption: `╭━━〔 𝐓𝐂𝐑𝐎𝐍𝐄𝐁 𝐗𝐌𝐃 𝐏𝐋𝐔𝐒 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *Here is the owner details*
 ┃◈┃• *Name* - ${ownerName}
@@ -38,14 +38,14 @@ async (conn, mek, m, { from }) => {
 ┃◈┃• *Version*: 1.0.0 Beta
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɢᴏᴛᴀʀ ᴛᴇᴄʜ*`, // Display the owner's details
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴄʀᴏɴᴇʙ ʜᴀᴄᴋx*`, // Display the owner's details
             contextInfo: {
                 mentionedJid: [`${ownerNumber.replace('+', '')}@s.whatsapp.net`], 
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363401658098220@newsletter',
-                    newsletterName: '𝗚𝗢𝗧𝗔𝗥-𝗫𝗠𝗗',
+                    newsletterJid: '12036340158020@newsletter',
+                    newsletterName: '𝐗𝐌𝐃-𝐏𝐋𝐔𝐒',
                     serverMessageId: 143
                 }            
             }

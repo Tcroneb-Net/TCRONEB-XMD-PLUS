@@ -78,13 +78,13 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         await conn.newsletterReactMessage(channelMeta.id, messageId, emoji);
 
-        return reply(`╭━━〔 *𝐆𝐎𝐓𝐀𝐑 𝐗𝐌𝐃* 〕━┈⊷
+        return reply(`╭━━〔 *𝐗𝐌𝐃-𝐏𝐋𝐔𝐒* 〕━┈⊷
 ┃▸ *Success!* Reaction sent
 ┃▸ *Channel:* ${channelMeta.name}
 ┃▸ *Reaction:* ${emoji}
 ╰────────────────┈⊷
 
-> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɢᴏᴛᴀʀ ᴛᴇᴄʜ*`);
+> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴄʀᴏɴᴇʙ ʜᴀᴄᴋx*`);
 
     } catch (e) {
 

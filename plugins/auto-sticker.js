@@ -17,7 +17,7 @@ cmd({
             from,
             {
               sticker: { url: data[keyword] },
-              package: '𝗚𝗢𝗧𝗔𝗥-𝗫𝗠𝗗'
+              package: '𝐗𝐌𝐃-𝐏𝐋𝐔𝐒'
             },
             { quoted: mek }
           );

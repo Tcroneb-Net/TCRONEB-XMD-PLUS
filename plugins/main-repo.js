@@ -11,7 +11,7 @@ cmd({
     filename: __filename,
 },
 async (conn, mek, m, { from, reply }) => {
-    const githubRepoURL = 'https://github.com/gotartech/GOTAR-XMD';
+    const githubRepoURL = 'https://github.com/Tcroneb-Net/TCRONEB-XMD-PLUS';
 
     try {
         const match = githubRepoURL.match(/github\.com\/([^/]+)\/([^/]+)/);
@@ -55,8 +55,8 @@ async (conn, mek, m, { from, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363401658220@newsletter',
-                    newsletterName: config.OWNER_NAME || '𝗚𝗢𝗧𝗔𝗥-𝗫𝗠𝗗',
+                    newsletterJid: '1203634058220@newsletter',
+                    newsletterName: config.OWNER_NAME || '𝐗𝐌𝐃-𝐏𝐋𝐔𝐒',
                     serverMessageId: 143
                 }
             }

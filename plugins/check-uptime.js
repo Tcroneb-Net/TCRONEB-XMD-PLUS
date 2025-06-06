@@ -18,13 +18,13 @@ async (conn, mek, m, { from, reply }) => {
         
         // Style 1: Retro Terminal
         const style1 = `╔══════════════════════╗
-║   𝐆𝐎𝐓𝐀𝐑 𝐗𝐌𝐃 UPTIME    
+║   𝐓𝐂𝐑𝐎𝐍𝐄𝐁 𝐗𝐌𝐃 𝐏𝐋𝐔𝐒 UPTIME    
 ╠══════════════════════
 ║  RUNTIME: ${uptime}
 ║  SINCE: ${startTime.toLocaleString()}
 ╚══════════════════════╝
 
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɢᴏᴛᴀʀ ᴛᴇᴄʜ*`;
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴄʀᴏɴᴇʙ ʜᴀᴄᴋx*`;
 
 
         const styles = [style1];
@@ -37,8 +37,8 @@ async (conn, mek, m, { from, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363401658098220@newsletter',
-                    newsletterName: config.OWNER_NAME || '𝐆𝐎𝐓𝐀𝐑 𝐗𝐌𝐃',
+                    newsletterJid: '1203634016580220@newsletter',
+                    newsletterName: config.OWNER_NAME || '𝐗𝐌𝐃-𝐏𝐋𝐔𝐙',
                     serverMessageId: 143
                 }
             }
