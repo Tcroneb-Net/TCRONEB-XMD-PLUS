@@ -36,7 +36,7 @@ async (conn, mek, m, { from, reply }) => {
         const repoData = await response.json();
 
         const message = `┌──────────────────────┐
-│  💫 TCRONEB XMD PLUS 𝗥𝗘𝗣𝗢  💫  
+│  💫 𝐓𝐂𝐑𝐎𝐍𝐄𝐁 𝐗𝐌𝐃 𝐏𝐋𝐔𝐒 𝐑𝐄𝐏𝐎 💫  
 ├──────────────────────
 │ • Name: ${repoData.name}
 │ • Owner: ${repoData.owner.login}
@@ -48,7 +48,7 @@ async (conn, mek, m, { from, reply }) => {
 > *ᴘᴏᴡᴇʀᴇᴅ ʙʏ TCRONEB HACKX*`;
 
         await conn.sendMessage(from, {
-            image: { url: `https://files.catbox.moe/82b8gr.jpg` },
+            image: { url: `https://i.ibb.co/HTrS1HYv/beee.jpg` },
             caption: message,
             contextInfo: { 
                 mentionedJid: [m.sender],
