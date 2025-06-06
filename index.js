@@ -114,7 +114,7 @@ const port = process.env.PORT || 9090;
   console.log('TCRONEB-XMD-PLUS CONNECTED SUCCESSFULLY ✅')
   
   let up = `*Hello there XMD-PLUS User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet XMD-PLUS WhatsApp Bot.\n\n *Thanks for using XMD-PLUS\ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029Vb4sHtX6hENwn07deE1a\n\n- *YOUR PREFIX:* = ${prefix}\n\n- *BOT MODE:* = ${config.MODE}\n\nDont forget to give star to repo ⬇️\n\nhttps://xmd-plus.zone.id\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Tcroneb Hackx\ud83d\udda4`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/82b8gr.jpg` }, caption: up })
+    conn.sendMessage(conn.user.id, { image: { url: `https://i.ibb.co/HTrS1HYv/beee.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
