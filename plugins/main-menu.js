@@ -27,15 +27,15 @@ async (conn, mek, m, { from, reply }) => {
 
     // Menu principal
     let menuText = `
-*╭══ XMD-PLUS*
-*┃❃* *ᴜsᴇʀ* : @${m.sender.split("@")[0]}
-*┃❃* *ʀᴜɴᴛɪᴍᴇ* : ${uptime()}
-*┃❃* *ᴍᴏᴅᴇ* : *${config.MODE}*
-*┃❃* *ᴘʀᴇғɪx* : [ ${config.PREFIX} ]
-*┃❃* *ᴩʟᴜɢɪɴ* : ${totalCommands}
-*┃❃* *ᴅᴇᴠ* : *ɢᴏᴛᴀʀ-ᴛᴇᴄʜ*
-*┃❃* *ᴠᴇʀsɪᴏɴs* :
-*┕──────────────❒*
+*╭━━━ 〔 𝚃𝙲𝚁𝙾𝙽𝙴𝙱 𝚇𝙼𝙳 𝙿𝙻𝚄𝚂〕━━━┈⊷
+*┃➣* *ᴜsᴇʀ* : @${m.sender.split("@")[0]}
+*┃➣* *ʀᴜɴᴛɪᴍᴇ* : ${uptime()}
+*┃➣* *ᴍᴏᴅᴇ* : *${config.MODE}*
+*┃➣* *ᴘʀᴇғɪx* : [ ${config.PREFIX} ]
+*┃➣* *ᴩʟᴜɢɪɴ* : ${totalCommands}
+*┃➣* *ᴅᴇᴠ* : *ɢᴏᴛᴀʀ-ᴛᴇᴄʜ*
+*┃➣* *ᴠᴇʀsɪᴏɴs* :
+*╰━━━━━━━━━━━━━━━━━❍❍➣*
 `;
 
 
@@ -55,7 +55,7 @@ async (conn, mek, m, { from, reply }) => {
         const usage = cmd.pattern.split('|')[0];
         menuText += `\n├➤ ${config.PREFIX}${usage}`;
       });
-      menuText += `\n*┕──────────────❒*`;
+      menuText += `\n*╰────────❍─────❍❍➣*`;
     }
 
     // Affecter à la variable caption
@@ -63,7 +63,7 @@ async (conn, mek, m, { from, reply }) => {
 
     // Envoyer l'image avec le menu
     await conn.sendMessage(from, {
-      image: { url: 'https://files.catbox.moe/82b8gr.jpg' },
+      image: { url: 'https://i.ibb.co/HTrS1HYv/beee.jpg' },
       caption: selectedStyle,
       contextInfo: {
         mentionedJid: [m.sender],
